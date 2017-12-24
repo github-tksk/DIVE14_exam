@@ -11,8 +11,10 @@
     </div>
   <% end %>
 
-  <%= f.label :title %>
-  <%= f.text_field :title, class: 'form-control' %>
+  <%= f.label :写真 %>
+  <%= pict_img(@blog) if pict_img(@blog) %>
+  <%= f.file_field :picture %>
+  <%= f.hidden_field :picture_cache %>
   <br>
   <%= f.label :content %>
   <%= f.text_field :content, class: 'form-control' %>
@@ -20,4 +22,4 @@
   <%= f.submit '投稿', class: 'btn btn-primary btn-block' %>
 <% end %>
 
-<%= link_to "ブログ一覧画面にもどる", blogs_path %>
+<%= link_to "写真一覧画面にもどる", blogs_path %>

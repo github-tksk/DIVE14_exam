@@ -1,11 +1,13 @@
 header {
   width: 100%;
   background-color: #2c3e50;
+  background-color: white;
   height: 54px;
 }
 
 .navbar-default {
     border: 0;
+    color: black;
 }
 .navbar {
     background-color: transparent;
@@ -52,21 +54,27 @@ header {
 
 .main-header {
   padding-bottom: 15%;
-  width: 100%;
-  background-size: cover;
+  width: 50vh;
+  height: 80vh;
+  float: left;
+  background-size:80%;
   background-image: image-url("header.jpg");
-  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
 
 .main-header img {
   display: block;
   margin: 0 auto;
-  width: 25%;
+  max-width: 100px;
   padding-top: 15%;
 }
 
 .about {
+  float: write;
   background-color: white;
+  height: 80vh;
   color: #333;
   padding: 40px 80px 80px;
 }
